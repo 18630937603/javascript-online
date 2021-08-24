@@ -19,5 +19,8 @@
   "homepage": "https://github.com/18630937603/javascript-online#readme",
   "devDependencies": {
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "loadsh": "0.0.4"
   }
 }
