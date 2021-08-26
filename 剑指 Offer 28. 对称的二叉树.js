@@ -1,3 +1,4 @@
+"use strict";
 // /*
 //
 // 请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
@@ -41,3 +42,4 @@
 //     else {return isMirror(root.left,root.right)}
 // }
 //
+//# sourceMappingURL=%E5%89%91%E6%8C%87%20Offer%2028.%20%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91.js.map

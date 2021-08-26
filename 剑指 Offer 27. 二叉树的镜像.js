@@ -1,3 +1,4 @@
+"use strict";
 //
 // class TreeNode {
 //     val: number
@@ -24,3 +25,4 @@
 //     switchChild(root)
 //     return root
 // }
+//# sourceMappingURL=%E5%89%91%E6%8C%87%20Offer%2027.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F.js.map
