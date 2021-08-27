@@ -10,22 +10,16 @@
 
 
 <script>
-    function outer () {
-        var a = 1
-
-        function inner () {
-            var b = 2
-
-            return function innermost () {
-                console.log(a, b)
-            }
+    function clos(arg1,arg2){
+        let boundVar = 10
+        return function(){
+            return boundVar+10+arg1+arg2
         }
-
-        return inner()
     }
 
-    var innermost = outer()
-    innermost() // 此时输出的值是1 2
+    let a = clos(5,8)
+    console.log(a())
+
 </script>
 
 </body>
