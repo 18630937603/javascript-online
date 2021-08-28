@@ -1,11 +1,6 @@
-var canAttendMeetings = function(intervals) {
-    intervals.sort(function(a,b){
-        return a[0]-b[0]
-    })
-    for(let i=0;i<intervals.length;i++){
-        if(intervals[i-1] && intervals[i][0] < intervals[i-1][1]){
-            return false
-        }
-    }
-    return true
-};
+const {MaxHeap} = require('./data-structures/max-heap')
+
+
+let a = new MaxHeap([3,6,3,5,341,6,865])
+
+console.log(a)
