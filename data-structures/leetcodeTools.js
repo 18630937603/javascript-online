@@ -1,4 +1,4 @@
-// 刷题工具，用来建树和链表来测试
+// 刷题工具，实现了一些基本的数据结构
 
 function TreeNode(val, left, right){
     this.val = (val===undefined ? null : val)
@@ -48,12 +48,39 @@ function buildList(array){
     return dummyHead.next
 }
 
+class Stack{
+    constructor() {
+        this._items = []
+    }
+    push(element){
+        this._items.push(element)
+    }
+    pop(){
+        return this._items.pop()
+    }
+    peek(){
+        return this._items[this._items.length-1]
+    }
+    isEmpty(){
+        return this._items.length===0
+    }
+    clear(){
+        this._items = []
+    }
+    size(){
+        return this._items.length
+    }
+}
+
+
+
 
 // export {TreeNode,buildTree,ListNode,buildList}    // ES6
 module.exports = {
     TreeNode,
     buildTree,
     ListNode,
-    buildList
+    buildList,
+    Stack
 }
 

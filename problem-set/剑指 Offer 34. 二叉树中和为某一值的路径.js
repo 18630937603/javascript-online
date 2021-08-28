@@ -7,7 +7,7 @@ var pathSum = function(root, target) {
         path.push(root.val)
         tar -= root.val
         if(tar===0 && !root.left && !root.right){
-            res.push(JSON.parse(JSON.stringify(path)))   //  复制数组要深拷贝
+            res.push(JSON.parse(JSON.stringify(path)))   //  复制数组要深拷贝，也可以用Array.from
         }
         recursive(root.left,tar)
         recursive(root.right,tar)
