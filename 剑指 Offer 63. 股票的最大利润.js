@@ -12,3 +12,5 @@ var maxProfit = function(prices) {
     }
     return maxprofit;
 };
+
+// 这题做了两遍了，没啥难度

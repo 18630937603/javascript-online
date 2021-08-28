@@ -1,3 +1,4 @@
+// 闭包测试
 
 function closure(arg1,arg2){
     let boundVar = 10

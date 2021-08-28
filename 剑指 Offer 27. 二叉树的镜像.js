@@ -21,3 +21,4 @@ function mirrorTree(root){
     switchChild(root)
     return root
 }
+//  这题没啥难度

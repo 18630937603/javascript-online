@@ -57,3 +57,4 @@ class MinStack {
  * var param_3 = obj.top()
  * var param_4 = obj.min()
  */
+//  这题没啥难度

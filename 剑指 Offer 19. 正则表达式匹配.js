@@ -8,3 +8,5 @@ function isMatch(s, p){
         return first_match && isMatch(s.substr(1), p.substr(1));
     }
 }
+
+//  困难题，只能看懂递归法

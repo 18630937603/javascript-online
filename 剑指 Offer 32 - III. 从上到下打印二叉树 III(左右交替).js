@@ -1,4 +1,3 @@
-import {buildTree} from './leetcodeTools.mjs'
 
 var levelOrder = function(root) {
     if(!root){return []}
@@ -30,8 +29,4 @@ var levelOrder = function(root) {
     return ret
 };
 
-let tree = buildTree([0,2,4,1,null,3,-1,5,1,null,6,null,8])
-
-console.log(levelOrder(tree))
-
-console.log('success')
+//  这题没啥难度

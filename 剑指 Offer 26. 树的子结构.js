@@ -36,3 +36,5 @@ var isSubStructure = function(A, B) {
         }
     }
 }
+
+//  这题写起来比较麻烦，倒是不难

@@ -1,3 +1,5 @@
+// this指针的绑定
+
 let a = function (){
     console.log(this)
 }

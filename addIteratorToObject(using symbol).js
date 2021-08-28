@@ -1,3 +1,4 @@
+// 给对象加入迭代功能
 Object.prototype[Symbol.iterator] = function* iterEntries() {
     let keys = Object.keys(this);
     for (let i = 0; i < keys.length; i++) {
@@ -22,7 +23,7 @@ Object.prototype[Symbol.iterator] = function () {
 
 var obj = { a: 'hello', b: 'world', c: 'hello world' }
 
-
+// 效果
 for (let [key, value] of obj) {
     console.log(key, value);
 }

@@ -38,3 +38,4 @@ function isSymmetric(root){
     if(!root){return true}
     else {return isMirror(root.left,root.right)}
 }
+//  这题没啥难度

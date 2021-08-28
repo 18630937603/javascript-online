@@ -13,3 +13,5 @@ var levelOrder = function(root) {
     }
     return res
 };
+
+// 这题没啥难度

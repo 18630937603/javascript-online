@@ -1,3 +1,5 @@
+// 刷题工具，用来建树和链表来测试
+
 function TreeNode(val, left, right){
     this.val = (val===undefined ? null : val)
     this.left = (left===undefined ? null : left)
@@ -36,10 +38,22 @@ function ListNode(val, next) {
    this.next = (next===undefined ? null : next)
 }
 
-function buildList(){
-
+function buildList(array){
+    let dummyHead = new ListNode(-1)
+    let curr = dummyHead
+    for(let val of array){
+        curr.next = new ListNode(parseInt(val))
+        curr = curr.next
+    }
+    return dummyHead.next
 }
 
 
-export {TreeNode,buildTree,ListNode,buildList}
+// export {TreeNode,buildTree,ListNode,buildList}    // ES6
+module.exports = {
+    TreeNode,
+    buildTree,
+    ListNode,
+    buildList
+}
 
