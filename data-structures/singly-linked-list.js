@@ -6,13 +6,13 @@ class SinglyLinkedList{
             next:(next===undefined ? null : next)
         }
     }
-    constructor(array) {
-        if(Object.prototype.toString.call(array)!=='[object Array]' || array.length===0){
+    constructor(...args) {
+        if(args.length===0){
             return null
         }else{
             let dummyHead = this.createNode(-1)
             let curr = dummyHead
-            for(let val of array){
+            for(let val of args){
                 curr.next = this.createNode(parseInt(val))
                 curr = curr.next
             }

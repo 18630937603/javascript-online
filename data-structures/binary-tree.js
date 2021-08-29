@@ -7,16 +7,16 @@ class BinaryTree{
             right:(right === undefined ? null : right)
         }
     }
-    constructor(array) {
-        if(Object.prototype.toString.call(array)!=='[object Array]' || array.length===0){
+    constructor(...args) {
+        if(args.length===0){
             return null
         }else{
-            let head = this.createNode(array[0])
-            const treeSize = array.length
+            let head = this.createNode(args[0])
+            const treeSize = args.length
             let treeNodes = []
             treeNodes.push(head)
             for(let i=1;i<treeSize;i++){
-                let node = new TreeNode(array[i])
+                let node = new TreeNode(args[i])
                 treeNodes.push(node)
                 let parentIndex = Math.floor((i-1)/2)
                 let isLeftChild = ((i-1) % 2) === 0
