@@ -1,6 +1,4 @@
 const {MaxHeap} = require('./data-structures/max-heap')
 
+let a = new MaxHeap([4,6,65,36,67,856,85,8,636,3])
 
-let a = new MaxHeap([3,6,3,5,341,6,865])
-
-console.log(a)
