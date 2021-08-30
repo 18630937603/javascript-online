@@ -1,16 +1,19 @@
 // 单向链表
 class SinglyLinkedList{
-    createNode(val, next) {
+    createNode(val) {
         return{
             val:(val===undefined ? null : val),
-            next:(next===undefined ? null : next)
+            next:null
         }
     }
-    constructor(...args) {
+    buildList(...args) {
         if(args.length===0){
             return null
         }else{
-            let dummyHead = this.createNode(-1)
+            if(Object.prototype.toString.call(args)==='[object Array]' && args.length===1){
+                args = args[0]
+            }
+            let dummyHead = this.createNode()
             let curr = dummyHead
             for(let val of args){
                 curr.next = this.createNode(parseInt(val))
