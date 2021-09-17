@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #someElement{
+            width: 500px;
+            height: 500px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div id="someElement"></div>
+<script>
+    // 造成内存泄漏，element无法被回收
+    // function assignHandler(){
+    //     let element = document.getElementById('someElement');
+    //     element.onclick = () => console.log(element.id);
+    // }
+
+    // 正确写法
+    function assignHandler(){
+        let element = document.getElementById('someElement');
+        let id = element.id;
+        element.onclick = () => console.log(id);
+        element = null;
+    }
+
+    assignHandler()
+</script>
+</body>
+</html>

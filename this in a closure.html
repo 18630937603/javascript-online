@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    window.identity = 'The Window';
+    let object = {
+        identity: 'My Object',
+        getIdentity(){
+            return this.identity;
+        }
+    };
+    console.log(object.getIdentity())
+    console.log((object.getIdentity = object.getIdentity)()) //  好奇怪啊，分成两步写就是 My Object
+</script>
+</body>
+</html>

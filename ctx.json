@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/",
+    "header": {
+      "host": "localhost:8088",
+      "connection": "keep-alive",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"93\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"93\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 Edg/93.0.961.44",
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+      "sec-fetch-site": "none",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+      "cookie": "Webstorm-f882b478=d73a958d-dfa2-4830-88ba-b7359ad23aa4; Hm_lvt_c3e3e8b3ea48955284516b186acf0f4e=1620729760,1620729796,1620729822,1620729828; Idea-53ba1fb1=41e14e29-1566-47da-8006-1773589c6d7b; Pycharm-dfa9712b=3095c450-b711-48c8-bf2f-4002fa3ba911; __utma=111872281.43855268.1626848501.1626848501.1626848501.1; __utmz=111872281.1626848501.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _pk_id.100001.1fff=0728c784a8ad70fc.1626848499.1.1626848518.1626848499.; Webstorm-f882b479=1140e00a-4564-40de-acb9-6e161d1df08a; csrftoken=nvvELmWR71OfSyNS1UcMVTMk6sGtYagxICuTshDTsRuiyHrlHpe0FCdDRe5E2qlm; isg=BMDAvgOCtZIaRUmWrdaDJOaakU6SSaQTePel_zpQs1kKtWHf4lrMo2XEyR11AFzr; l=eBxhMIc7gLyL5CriBO5Clurza77O2IOb8PVzaNbMiInca1rROL31JNCKhe9W5dtjgt5X6etziOaEsdFk7YaLRFkDBeYI6GLa1Kpw8e1..; tfstk=cVPdBwG2IGjH7x3TuJBGV5LHU3Ica_LKqeiJwwqWNB06Hnxvcsj4iSdM49gryMbO."
+    }
+  },
+  "response": {
+    "status": 404,
+    "message": "Not Found",
+    "header": {}
+  },
+  "app": {
+    "subdomainOffset": 2,
+    "proxy": false,
+    "env": "development"
+  },
+  "originalUrl": "/",
+  "req": "<original node req>",
+  "res": "<original node res>",
+  "socket": "<original node socket>"
+}
