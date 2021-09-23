@@ -36,7 +36,12 @@
         }
     }
 
-    window.requestAnimationFrame(step);
+    let timer = window.requestAnimationFrame(step);
+
+
+    function destroy(){
+        window.cancelAnimationFrame(timer)
+    }
 </script>
 
 </body>

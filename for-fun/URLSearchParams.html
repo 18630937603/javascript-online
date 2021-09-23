@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <button onclick="myfunc()">click me</button>
+  <script>
+      function myfunc(){
+          let up = new URLSearchParams();
+          up.set("activity_id", '1');
+          up.set("city_id", '2');
+          up.set('k','关键字')
+          console.log(up.get('k'))
+          console.log(up.toString())
+      }
+      // other API：类似map，有get set has keys() values() entries()
+  </script>
+</body>
+</html>
