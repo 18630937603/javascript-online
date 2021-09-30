@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
     <title>Title</title>
 </head>
 <body>
-
 
 <button id="btn">点我触发事件</button>
 
@@ -16,12 +16,11 @@
         // 定时器版
         let timer;
         return function () {
-            // let context = this;
+            let context = this;
             if (!timer) {
                 timer = setTimeout(() => {
                     timer = null;
-                    // func.apply(context, arguments)
-                    func()
+                    func.apply(context, arguments)
                 }, wait)
             }
         }
@@ -29,9 +28,12 @@
 
     function handle(){
         console.log(this)
+        console.log('我被触发了')
     }
 
+    // 防抖和节流中绑定this的作用：比如说事件是这个按钮触发的，那么handle中的this可以指向按钮，而不是window
     btn.addEventListener('click',throttle(handle,1000))
+    // window.addEventListener('resize',throttle(handle,1000))
 
 </script>
 

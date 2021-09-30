@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .test {
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: absolute;
+            left: 200px;
+        }
+        .test2 {
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="test" class="test"></div>
+    <div id="test2" class="test2"></div>
+    <script>
+        let tst = document.getElementById('test');
+        let tst2 = document.getElementById('test2');
+        tst.addEventListener('click',function (){
+            console.log('我被触发了')
+        })
+        tst2.addEventListener('click',function (){
+            console.log('我被触发了2')
+        })
+    </script>
+</body>
+</html>

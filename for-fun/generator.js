@@ -25,9 +25,13 @@ function* foo() {
     yield yield yield 5
 }
 const result = foo() // foo {<suspended>}
-console.log(result.next(1));  // {value: 1, done: false}
-console.log(result.next(2));  // {value: 2, done: false}
-console.log(result.next(3));  // {value: 3, done: true}
-console.log(result.next());  //{value: undefined, done: true}
+// console.log(result.next(1));  // {value: 1, done: false}
+// console.log(result.next(2));  // {value: 2, done: false}
+// console.log(result.next(3));  // {value: 3, done: true}
+// console.log(result.next());  //{value: undefined, done: true}
 
+console.log(result.next());  // {value: 1, done: false}
+console.log(result.next());  // {value: 2, done: false}
+console.log(result.next());  // {value: 3, done: true}
+console.log(result.next());  //{value: undefined, done: true}
 

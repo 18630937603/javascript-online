@@ -14,7 +14,7 @@
 <body>
 <div id="someElement"></div>
 <script>
-    // 造成内存泄漏，element无法被回收
+    // 在函数中直接给dom元素绑定事件，会造成内存泄漏，element无法被回收
     // function assignHandler(){
     //     let element = document.getElementById('someElement');
     //     element.onclick = () => console.log(element.id);

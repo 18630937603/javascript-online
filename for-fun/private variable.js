@@ -1,4 +1,4 @@
-/*闭包实现
+// 闭包实现
 
 class MyObject{
     constructor() {
@@ -18,4 +18,3 @@ let obj = new MyObject();
 // obj.privateVariable
 obj.publicMethod()
 
- */
