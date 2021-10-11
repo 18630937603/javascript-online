@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <title>Title</title>
+</head>
+<body>
+<form onsubmit="myFunc(event)">
+    <input type="text" name="username">
+<!--    <script>alert('你被XSS攻击了23333')</script>  不行，会被浏览器自动过滤 -->
+    <button type="submit">DOM型XSS</button>
+</form>
+
+<div id="display"></div>
+
+<script>
+    let xssDOM = document.querySelector('input')
+    let dis = document.querySelector('#display')
+    let xssString = ""
+    function myFunc(event) {
+        event.preventDefault();
+        xssString += xssDOM.value
+        dis.innerHTML = xssString
+        // dis.innerText = xssString
+        // innerText可以把输入完整显示出来
+    }
+</script>
+</body>
+</html>
