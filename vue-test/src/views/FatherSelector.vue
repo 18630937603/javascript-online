@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "LessAndSelector"
+  name: "FatherSelector"
 }
 </script>
 
@@ -26,8 +26,6 @@ export default {
     }
   }
 }
-
-
 
 
 </style>

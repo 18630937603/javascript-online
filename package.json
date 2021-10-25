@@ -22,6 +22,11 @@
   },
   "dependencies": {
     "global": "^4.4.0",
-    "loadsh": "0.0.4"
+    "koa": "^2.13.3",
+    "koa-route": "^3.2.0",
+    "koa-router": "^10.1.1",
+    "koa-websocket": "^6.0.0",
+    "loadsh": "0.0.4",
+    "nodemon": "^2.0.13"
   }
 }
