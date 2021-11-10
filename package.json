@@ -21,6 +21,7 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "global": "^4.4.0",
     "koa": "^2.13.3",
     "koa-route": "^3.2.0",

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="css.php">-->
+</head>
+<body>
+
+    <div style="color: rebeccapurple" id="test">I'm a DOM element</div>
+    <script>
+        document.addEventListener('DOMContentLoaded',function() {
+            console.log('DOMContentLoaded')
+        })
+        let date3 = Date.now();
+        while (Date.now()-date3 < 2000){
+
+        }
+        console.log('JS1 done')
+    </script>
+    <script>
+        let date = Date.now();
+        while (Date.now()-date < 2000){
+
+        }
+        // let css = document.createElement('link')
+        // css.setAttribute('rel','stylesheet')
+        // css.setAttribute('href','test.css')
+        // document.body.appendChild(css)
+        console.log('JS2 done',new Date().toISOString())
+    </script>
+    <script>
+        let date2 = Date.now()
+        while (Date.now()-date2 < 2000){
+
+        }
+        console.log('JS3 done',new Date().toISOString())
+    </script>
+</body>
+</html>
