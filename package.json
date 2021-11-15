@@ -28,6 +28,7 @@
     "koa-router": "^10.1.1",
     "koa-websocket": "^6.0.0",
     "loadsh": "0.0.4",
+    "mnemonist": "^0.38.5",
     "nodemon": "^2.0.13"
   }
 }

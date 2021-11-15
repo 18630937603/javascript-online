@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div>
+  <button>点击发送AJAX请求</button>
+</div>
+<div id="content" style="border: black 2px solid;height: 500px"></div>
+<script>
+    const btn = document.getElementsByTagName('button')[0];
+    const res = document.getElementById('content');
+    btn.onclick = function (){
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET','https://www.baidu.com');
+        xhr.send();
+        xhr.onreadystatechange = function (){
+            if(xhr.readyState === 4 && xhr.status === 200){
+                res.innerHTML = xhr.response
+            }
+        }
+    }
+</script>
+</body>
+</html>
