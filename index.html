@@ -5,6 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
+    <div>123</div>
+    <button onclick="send()">send message</button>
+    <script>
+        let connection = new WebSocket(`ws://8.140.159.135:8085/webSocket`)
+        connection.onopen = () => {
+            console.log('连接建立成功！')
+        }
+        connection.onclose = () => {
+            console.log('连接已关闭')
+        }
+    </script>
 </body>
 </html>

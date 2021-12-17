@@ -1,8 +1,9 @@
 "use strict";
-function identity(arg) {
-    console.log(arg);
-    return arg;
-}
-let myIdentity = identity;
-myIdentity(123);
+var Main;
+(function (Main) {
+    Main[Main["A"] = 0] = "A";
+    Main[Main["B"] = 1] = "B";
+    Main[Main["C"] = 2] = "C";
+})(Main || (Main = {}));
+console.log(Main.B);
 //# sourceMappingURL=main.js.map

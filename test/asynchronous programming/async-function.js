@@ -28,3 +28,36 @@ a().then(value=>{
 });
 
 console.log('sync codes end')
+
+
+
+
+
+
+async function A() {
+    console.log('hahaha')
+    setTimeout(() => {
+        console.log('djoiesd')
+    })
+    console.log('dajodea')
+    await C()
+    console.log('dwdwd')
+}
+
+async function B() {
+    await A()
+    console.log('A finished')
+}
+
+async function C() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('500')
+        },500)
+    })
+}
+
+B()
+
+
+

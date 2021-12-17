@@ -5,35 +5,41 @@ import FatherViewPage from "@/views/QueryParams/FatherViewPage";
 import MiddleViewPage from "@/views/QueryParams/MiddelViewPage";
 import InnerViewPage from "@/views/QueryParams/InnerViewPage";
 
-
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/father',
-    name: 'Father',
-    component: FatherViewPage
-  },
-  {
-    path: '/middle',
-    name: 'Middle',
-    component: MiddleViewPage
-  },
-  {
-    path: '/inner',
-    name: 'Inner',
-    component: InnerViewPage
-  }
-
+    {
+        path: '/home',
+        name: 'Home',
+        component: Home
+    },
+    {
+        path: '/father',
+        name: 'Father',
+        component: FatherViewPage,
+    },
+    {
+        path: '/middle',
+        name: 'Middle',
+        component: MiddleViewPage
+    },
+    {
+        path: '/inner',
+        name: 'Inner',
+        component: InnerViewPage
+    },
+    {
+        path: '*',
+        redirect: '/home'
+    },
 ]
 
+
 const router = new VueRouter({
-  routes
+    routes
 })
+
+
+
 
 export default router
