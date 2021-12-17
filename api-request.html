@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<script>
+    // 在浏览器打开该文件，然后查看控制台
+    // axios.post('http://www.lzh0129.top:8081/login', {
+    //     username: '123',
+    //     password: '123'
+    // }).then((res) => {
+    //     console.log('我的网站返回的数据', res.data)
+    // })
+    //
+    // axios.post('https://test.geekshang.top/api/login', {
+    //     username: '123',
+    //     password: '123'
+    // }).then((res) => {
+    //     console.log('现在线上网站login接口返回的数据', res.data)
+    // })
+    //
+    // axios.post('https://test.geekshang.top/api/changeTableStatus', {
+    //     orderId: 0,
+    //     id: 2,
+    //     seats: 4,
+    //     page: 1,
+    //     status: 0,
+    //     dishes: null,
+    //     dishMap: null,
+    //     waiterId: 1,
+    //     cusId: 0
+    // }).then((res) => {
+    //     console.log('返回的数据：',res.data)
+    //     // 预期返回：{err:0,msg:'修改成功'}，并将数据正确存储至数据库
+    // })
+    axios({
+        method: 'POST',
+        url: 'https://gsapi-sim128-us01-test.intra.xiaojukeji.com/quest/v1/estimate',
+        data: {
+            k1: 'v1',
+            k2: 'v2'
+        }
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"version":3,"file":"designPatterns.js","sourceRoot":"","sources":["designPatterns.ts"],"names":[],"mappings":";AAAA,OAAO;AACP,MAAM,SAAS;IAEX,gBAAuB,CAAC;IACjB,MAAM,CAAC,WAAW;QACrB,IAAI,CAAC,SAAS,CAAC,QAAQ,EAAE;YACrB,SAAS,CAAC,QAAQ,GAAG,IAAI,SAAS,EAAE,CAAC;SACxC;QACD,OAAO,SAAS,CAAC,QAAQ,CAAC;IAC9B,CAAC;CACJ"}
